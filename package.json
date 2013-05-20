@@ -1,13 +1,17 @@
 {
-  "name": "",
-  "description": "",
+  "name": "inferences",
+  "description": "type inference for javascript",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["type inference", "esprima"],
   "main": "./index",
   "maintainers": [
     "Arpad Borsos <arpad.borsos@googlemail.com> (http://swatinem.de)"
   ],
   "dependencies": {
+    "analyses": "~ 0.0.1",
+    "walkes": "~ 0.1.0",
+    "esgraph": "~ 0.1.0",
+    "esprima": "~ 1.0.0"
   },
   "devDependencies": {
     "mocha": "*",
