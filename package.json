@@ -8,7 +8,7 @@
     "Arpad Borsos <arpad.borsos@googlemail.com> (http://swatinem.de)"
   ],
   "dependencies": {
-    "analyses": "~ 0.0.1",
+    "analyses": "~ 0.0.2",
     "walkes": "~ 0.1.0",
     "esgraph": "~ 0.1.0",
     "esprima": "~ 1.0.0"
