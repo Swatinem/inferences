@@ -1,13 +1,15 @@
-# 
+# inferences
+
+Type inference for javascript
 
 
-[![Build Status](https://travis-ci.org/Swatinem/.png?branch=master)](https://travis-ci.org/Swatinem/)
-[![Coverage Status](https://coveralls.io/repos/Swatinem//badge.png?branch=master)](https://coveralls.io/r/Swatinem/)
-[![Dependency Status](https://gemnasium.com/Swatinem/.png)](https://gemnasium.com/Swatinem/)
+[![Build Status](https://travis-ci.org/Swatinem/inferences.png?branch=master)](https://travis-ci.org/Swatinem/inferences)
+[![Coverage Status](https://coveralls.io/repos/Swatinem/inferences/badge.png?branch=master)](https://coveralls.io/r/Swatinem/inferences)
+[![Dependency Status](https://gemnasium.com/Swatinem/inferences.png)](https://gemnasium.com/Swatinem/inferences)
 
 ## Installation
 
-    $ npm install 
+    $ npm install inferences
 
 ## Usage
 
