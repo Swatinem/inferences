@@ -1,4 +1,4 @@
-// should treat functions as objects
+// TODO: should treat functions as objects
 //number
 function Test() {}
 Test.a = 10;

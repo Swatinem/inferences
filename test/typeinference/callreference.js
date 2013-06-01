@@ -1,4 +1,4 @@
-// should handle call of a reference correctly
+// TODO: should handle call of a reference correctly
 //undefined
 function a() {
 	return;

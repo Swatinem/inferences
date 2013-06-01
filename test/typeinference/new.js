@@ -1,4 +1,4 @@
-// should write props on the new object
+// TODO: should write props on the new object
 //number
 function F() {
 	this.a = 10;

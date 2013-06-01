@@ -1,4 +1,4 @@
-// should support basic typeof
+// TODO: should support basic typeof
 //string
 
 // TODO: split this out into different tests once we have == support

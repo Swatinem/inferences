@@ -1,4 +1,4 @@
-// should also do branching and merging inside function calls
+// TODO: should also do branching and merging inside function calls
 //<number | string>
 var a
 var actual = (function () {

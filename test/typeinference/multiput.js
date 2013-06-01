@@ -1,4 +1,4 @@
-// should correctly handle `PutValue` for `MultiReference`
+// TODO: should correctly handle `PutValue` for `MultiReference`
 //string
 if (any)
 	var a = new (function (a) { this.a = 1; });

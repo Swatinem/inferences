@@ -1,4 +1,4 @@
-// should handle call of `MultiValue` functions correctly
+// TODO: should handle call of `MultiValue` functions correctly
 //<number | string>
 if (any)
 	var f = function () { return 1; };

@@ -1,4 +1,4 @@
-// should support multiple levels of prototype chain
+// TODO: should support multiple levels of prototype chain
 //number
 function F() {
 }

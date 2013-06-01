@@ -1,4 +1,4 @@
-// should handle new of `MultiValue` functions correctly
+// TODO: should handle new of `MultiValue` functions correctly
 //<number | string>
 if (any)
 	var f = function (a) { this.a = 1; };

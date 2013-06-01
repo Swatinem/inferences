@@ -1,4 +1,4 @@
-// should support `new` returning an ObjectValue
+// TODO: should support `new` returning an ObjectValue
 //number
 function F() {
 	return {a: 1};

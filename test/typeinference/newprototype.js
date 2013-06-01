@@ -1,4 +1,4 @@
-// should support object construction using `new`
+// TODO: should support object construction using `new`
 //number
 function F() {
 }

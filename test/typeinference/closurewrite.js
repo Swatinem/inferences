@@ -1,4 +1,4 @@
-// should support writing to outer variable
+// TODO: should support writing to outer variable
 //number
 var a;
 (function () { a = 10; })();
