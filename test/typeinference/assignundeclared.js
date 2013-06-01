@@ -1,3 +1,3 @@
 // should implicitly create props on the global object
-//number
+//number:1
 actual = 1;

@@ -22,12 +22,7 @@ function doInference(ast, filename) {
 		exit = normals[0];
 	// get the environment of the output node
 	var runtime = output.output.get(exit).first();
-	var env = runtime.context;
-	// and resolve it to a value
-	var ref = runtime.GetIdentifierReference(env.LexicalEnvironment, 'actual', false);
-	var value = runtime.GetValue(ref);
-	//console.log(env, ref, value);
-	return value;
+	return runtime.get('actual');
 }
 
 function createTest(dir, file) {
@@ -39,13 +34,7 @@ function createTest(dir, file) {
 	// possibly skip the tests
 	(title.indexOf('TODO:') == 0 ? it.skip : it)(title, function () {
 		var value = doInference(ast, dir + file /* for resolving require() */);
-		var actual;
-		if (value instanceof Set && value.size === 1)
-			value = value.first();
-		if (value instanceof Set) {
-			actual = '<' + value.map(function (e) { return e.Type.toLowerCase(); }).join(' | ') + '>';
-		} else
-			actual = value && value.Type.toLowerCase() || 'any';
+		var actual = value && value.toString() || 'any';
 		actual.should.equal(expected);
 	});
 }
@@ -68,10 +57,11 @@ describe('Type Inference', function () {
 	var basedir = __dirname + '/typeinference/';
 	checkFiles(basedir);
 
-	it.skip('should pretty print all the objects', function () {
+	it('should pretty print all the objects', function () {
 		var ast = esprima.parse('var a, b = {a: any || 1, b: true, c: "str", d: null, e: a, f: function () {}}');
 		var inferred = inference(ast);
-		inferred.output.get(inferred.cfg[1]).toString().should
-			.eql('{"a": undefined, "b": {"a": [any, number:1], "b": boolean:true, "c": string:"str", "d": null, "e": undefined, "f": {"length": number:0, "prototype": {"constructor": [Cycle]}}}}');
+		var output = inferred.output.get(inferred.cfg[1]).first();
+		output.globalObject.toString().should
+			.eql('object:{"a": undefined, "b": object:{"a": <any | number:1>, "b": boolean:true, "c": string:"str", "d": null, "e": undefined, "f": function:{"length": number:0, "prototype": object:{"constructor": [Cycle]}}}}');
 	});
 });

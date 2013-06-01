@@ -1,5 +1,5 @@
 // should treat zero as false
-//number
+//number:10
 if (0)
 	var actual = '';
 else

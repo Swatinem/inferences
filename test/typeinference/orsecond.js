@@ -1,3 +1,3 @@
 // should return the second operand of || if the first is falsy
-//string
+//string:""
 var actual = 0 || '';

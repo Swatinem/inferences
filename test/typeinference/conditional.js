@@ -1,3 +1,3 @@
 // should support ternary ?:
-//number
+//number:10
 var actual = true ? 10 : '';

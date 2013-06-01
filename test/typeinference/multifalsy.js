@@ -1,5 +1,5 @@
 // should make the boolean false if all values of a `MultiValue` are falsy
-//boolean
+//boolean:false
 if (any)
 	var a;
 else

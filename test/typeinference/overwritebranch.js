@@ -1,5 +1,5 @@
 // should overwrite assignment in branching code
-//string
+//string:"hi"
 if (sometest)
 	var actual = '';
 else

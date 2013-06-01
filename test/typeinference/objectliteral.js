@@ -1,3 +1,3 @@
 // should handle simple object literals
-//object
+//object:{}
 var actual = {};

@@ -1,5 +1,5 @@
 // should treat empty string as false
-//number
+//number:10
 if ('')
 	var actual = '';
 else

@@ -1,3 +1,3 @@
 // should treat null as falsy
-//number
+//number:1
 var actual = null ? '' : 1;

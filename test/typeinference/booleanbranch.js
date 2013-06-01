@@ -1,5 +1,5 @@
 // should go one way, depending on a boolean
-//boolean
+//boolean:true
 if (true)
 	var actual = true;
 else

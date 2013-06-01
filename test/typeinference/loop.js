@@ -1,4 +1,4 @@
-// should correctly handle loops
+// TODO: should correctly handle loops
 //number
 for (var i = 0; i < any; i++) {
 }

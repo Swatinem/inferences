@@ -1,3 +1,3 @@
 // should support basic assignment
-//number
+//number:10
 var actual = 10;

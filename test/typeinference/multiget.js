@@ -1,5 +1,5 @@
 // should correctly handle `GetValue` for `MultiReference`
-//<string | number>
+//<string:"str" | number:10>
 if (any)
 	var a = {a: 'str'};
 else

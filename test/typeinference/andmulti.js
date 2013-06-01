@@ -1,5 +1,5 @@
 // should return both operands of && if the first value is not clear
-//<undefined | string | number>
+//<undefined | string:"hi" | number:19>
 if (any)
 	var a;
 else
