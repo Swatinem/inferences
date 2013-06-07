@@ -14,6 +14,20 @@ Type inference for javascript
 ## Usage
 
 
+## TODO
+
+* get function calls working
+* improve merging, maybe make properties `MultiValue`s by default?
+
+* get arrays working
+* get computed member expressions working
+
+* provide a faster flow-insensitive analysis?
+
+* get `any` properties working
+* properly handle property descriptors
+* handle getters and setters
+
 ## License
 
   LGPLv3
