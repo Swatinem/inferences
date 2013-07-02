@@ -1,3 +1,3 @@
-// TODO: should make arguments.length a number
-//number
-var actual = (function () { return arguments.length; })();
+// should make arguments.length a number
+//<number:2>
+var actual = (function (a) { return arguments.length; })(1,2);
