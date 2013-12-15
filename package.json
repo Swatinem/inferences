@@ -25,6 +25,6 @@
   "scripts": {
     "test": "make test && make test-coveralls"
   },
-  "repository": "git://github.com/Swatinem/.git",
+  "repository": "git://github.com/Swatinem/inferences.git",
   "license": "LGPLv3"
 }
