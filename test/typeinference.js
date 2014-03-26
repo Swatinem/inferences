@@ -1,11 +1,9 @@
 
 var esprima = require('esprima');
 var inference = require('../');
-var esgraph = require('esgraph');
 var fs = require('fs');
-var Set = require('analyses').Set;
 
-function doInference(ast, filename) {
+function doInference(ast) {
 	var output = inference(ast);
 	var runtime = output.runtime;
 	var exit = output.cfg[1];
@@ -21,7 +19,7 @@ function doInference(ast, filename) {
 	if (normals.length === 1)
 		exit = normals[0];
 	// get the environment of the output node
-	var runtime = output.output.get(exit).first();
+	runtime = output.output.get(exit).first();
 	return runtime.get('actual');
 }
 
@@ -32,7 +30,7 @@ function createTest(dir, file) {
 	var title = comments[0].value.trim() + ' (' + file + ')';
 	var expected = comments[1].value;
 	// possibly skip the tests
-	(title.indexOf('TODO:') == 0 ? it.skip : it)(title, function () {
+	(title.indexOf('TODO:') === 0 ? it.skip : it)(title, function () {
 		var value = doInference(ast, dir + file /* for resolving require() */);
 		var actual = value && value.toString() || 'any';
 		actual.should.equal(expected);
